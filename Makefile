@@ -2,10 +2,10 @@ init:
 	powershell ./scripts/download_redbean.ps1
 
 clean:
-	rm ./dist/redbean.com && cp ./vendor/redbean.com ./dist/redbean.com
+	rm ./bin/redbean.com && cp ./vendor/redbean.com ./bin/redbean.com
 
 zip:
-	cd ./src/ && zip -r ../dist/redbean.com *
+	cd ./src/ && zip -r ../bin/redbean.com *
 
 run:
-	./dist/redbean.com
+	./bin/redbean.com

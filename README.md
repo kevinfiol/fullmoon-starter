@@ -22,7 +22,7 @@ make clean
 
 You can use the same make tasks above after installing the required dependencies:
 
-* GNU coreutils (Use full [Cmder](https://cmder.net/), or [Git Bash](https://gitforwindows.org/))
+* GNU coreutils (Available with full [Cmder](https://cmder.net/), or [Git Bash](https://gitforwindows.org/))
     * This should include native Windows binaries for `rm`, `cp`, and `make`
 * `zip` utility
     * The simplest way to attain this on Windows is via [scoop](https://scoop.sh/).

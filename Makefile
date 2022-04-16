@@ -2,7 +2,7 @@ init:
 ifeq ($(OS),Windows_NT)
 	powershell ./scripts/init.ps1
 else
-	sh ./scripts/init.sh
+	bash ./scripts/init.sh
 endif
 
 clean:
@@ -10,6 +10,3 @@ clean:
 
 zip:
 	cd ./src/ && zip -r ../bin/redbean.com .
-
-run:
-	./bin/redbean.com &

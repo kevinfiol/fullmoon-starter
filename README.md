@@ -20,7 +20,7 @@ make clean
 
 ## Usage on Windows
 
-You can use the 
+You can use the same make tasks above after installing the required dependencies:
 
 * GNU coreutils (Use full [Cmder](https://cmder.net/), or [Git Bash](https://gitforwindows.org/))
     * This should include native Windows binaries for `rm`, `cp`, and `make`

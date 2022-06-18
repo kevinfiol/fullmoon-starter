@@ -20,7 +20,7 @@ make clean
 
 ## Usage on Windows
 
-You can use the same make tasks above after installing the required dependencies:
+You can use the same make tasks above after installing the required dependencies with [scoop](https://scoop.sh/):
 
 * `make`
     * Install with `scoop install make`

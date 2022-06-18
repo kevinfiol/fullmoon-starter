@@ -22,8 +22,9 @@ make clean
 
 You can use the same make tasks above after installing the required dependencies:
 
-* GNU coreutils (Available with full [Cmder](https://cmder.net/), or [Git Bash](https://gitforwindows.org/))
-    * This should include native Windows binaries for `rm`, `cp`, and `make`
-* `zip` utility
-    * The simplest way to attain this on Windows is via [scoop](https://scoop.sh/).
-    * After installing scoop, simply run `scoop install zip`
+* `make`
+    * Install with `scoop install make`
+* `zip`
+    * Install with `scoop install zip`
+* `watchexec`
+    * Install with `scoop install watchexec`

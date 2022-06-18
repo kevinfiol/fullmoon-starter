@@ -1,0 +1,1 @@
+cp ./vendor/redbean.com ./bin/redbean.com

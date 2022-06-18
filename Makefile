@@ -1,12 +1,20 @@
 init:
-ifeq ($(OS),Windows_NT)
-	powershell ./scripts/init.ps1
+ifeq ($(OS), Windows_NT)
+	powershell ./scripts/win/init.ps1
 else
-	bash ./scripts/init.sh
+	bash ./scripts/unix/init.sh
 endif
 
 clean:
-	rm ./bin/redbean.com && cp ./vendor/redbean.com ./bin/redbean.com
+ifeq ($(OS), Windows_NT)
+	powershell ./scripts/win/clean.ps1
+else
+	bash ./scripts/unix/clean.sh
+endif
 
 zip:
-	cd ./src/ && zip -r ../bin/redbean.com .
+ifeq ($(OS), Windows_NT)
+	powershell ./scripts/win/zip.ps1
+else
+	bash ./scripts/unix/zip.sh
+endif

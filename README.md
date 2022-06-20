@@ -2,7 +2,12 @@
 
 A boilerplate for getting started with the [Fullmoon web framework](https://github.com/pkulchenko/fullmoon).
 
-# Usage
+## Requirements
+* An x86_64 CPU
+* `zip`
+* `make`
+
+## Usage
 
 ```bash
 # downloads redbean and makes copy at `bin/redbean.com`
@@ -18,13 +23,12 @@ make zip
 make clean
 ```
 
-## Usage on Windows
+### Usage on Windows
 
-You can use the same make tasks above after installing the required dependencies with [scoop](https://scoop.sh/):
+Dependencies can be installed using [scoop.sh](https://scoop.sh):
 
-* `make`
-    * Install with `scoop install make`
-* `zip`
-    * Install with `scoop install zip`
-* `watchexec`
-    * Install with `scoop install watchexec`
+```bash
+scoop install zip make
+```
+
+Alternatively, you can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install).
